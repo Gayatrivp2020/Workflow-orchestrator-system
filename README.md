@@ -9,6 +9,19 @@ Frontend: HTML, CSS, JavaScript
 Database: H2/MySQL 
 Build Tool: Maven 
 
+# Workflow Orchestration System – Working (Points)
+Define a workflow with multiple tasks and their dependencies (via JSON or database)
+User triggers workflow execution through frontend or API
+Request is received by the Controller layer
+Controller forwards the request to the Service layer
+Service fetches workflow details (tasks + dependencies)
+System resolves dependencies using a DAG/topological approach
+Determines the correct execution order of tasks
+Executes tasks sequentially via worker APIs
+Logs each task’s execution status (SUCCESS/FAILED)
+Handles errors using a global exception handler
+Sends final execution result back to the user interface
+
 # Setup: 
 1. Clone repo 
 2. Run: ./mvnw spring-boot:run 
