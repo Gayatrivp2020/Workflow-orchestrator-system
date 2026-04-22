@@ -1,0 +1,36 @@
+{
+  "workflowName":"Order Processing",
+
+  "tasks":[
+
+    {
+      "name":"Payment",
+      "type":"HTTP"
+    },
+
+    {
+      "name":"ManualApproval",
+      "type":"HUMAN",
+      "dependsOn":"Payment"
+    },
+
+    {
+      "name":"Inventory",
+      "type":"HTTP",
+      "dependsOn":"ManualApproval"
+    },
+
+    {
+      "name":"Notification",
+      "type":"HTTP",
+      "dependsOn":"Payment"
+    },
+
+    {
+      "name":"Shipping",
+      "type":"HTTP",
+      "dependsOn":"Inventory"
+    }
+
+  ]
+}
