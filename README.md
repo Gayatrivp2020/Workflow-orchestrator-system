@@ -1,4 +1,4 @@
-<img width="218" height="25" alt="image" src="https://github.com/user-attachments/assets/34e238df-ae16-4880-b3f3-1b11cc383df7" /># Workflow Orchestration System 
+# Workflow Orchestration System 
 A Spring Boot–based Workflow Orchestration System that allows users to define, manage, 
 and execute workflows with task dependencies. 
 Features: - Create and execute workflows - Task dependency management - Execution logging & tracking - REST API support - Built-in frontend 
